@@ -45,7 +45,7 @@ function Products({ addToCart }) {
     const [sortOrder, setSortOrder] = useState("default");
 
     useEffect(() => {
-        fetch("http://localhost:5001/api/products")
+        fetch("https://glow-and-grace-c15v.onrender.com/api/products")
             .then((response) => response.json())
             .then((data) => {
                 const productsWithImages = data.map((product) => ({
