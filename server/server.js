@@ -7,11 +7,7 @@ const bcrypt = require("bcrypt");
 
 const app = express();
 const pool = new Pool({
-    user: "postgres",
-    host: "localhost",
-    database: "glow_and_grace",
-    password: process.env.DB_PASSWORD,
-    port: 5432,
+    connectionString: process.env.DATABASE_URL,
 });
 
 pool.query("SELECT NOW()", (err, res) => {
