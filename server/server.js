@@ -18,7 +18,11 @@ pool.query("SELECT NOW()", (err, res) => {
     }
 })
 
-app.use(cors());
+app.use(
+    cors({
+        origin: "http://localhost:5173",
+    })
+);
 app.use(express.json());
 
 const PORT = process.env.PORT || 5001;
