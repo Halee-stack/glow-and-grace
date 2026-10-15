@@ -28,7 +28,7 @@ function Login({ setUser }) {
       return;
     }
 
-    const response = await fetch("http://localhost:5001/api/login", {
+    const response = await fetch("https://glow-and-grace-c15y.onrender.com/api/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -44,7 +44,7 @@ function Login({ setUser }) {
       setMessage(data.message);
       setIsSuccess(true);
       setUser(data.user);
-      
+
       localStorage.setItem("user", JSON.stringify(data.user));
     } else {
       setMessage(data.error);

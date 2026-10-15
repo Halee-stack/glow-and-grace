@@ -36,7 +36,7 @@ function Register() {
             return;
         }
 
-        const response = await fetch("http://localhost:5001/api/register", {
+        const response = await fetch("https://glow-and-grace-c15y.onrender.com/api/register", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
