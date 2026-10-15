@@ -20,9 +20,13 @@ pool.query("SELECT NOW()", (err, res) => {
 
 app.use(
     cors({
-        origin: "http://localhost:5173",
+        origin: [
+            "http://localhost:5173",
+            "https://glow-and-grace-1.onrender.com",
+        ],
     })
 );
+
 app.use(express.json());
 
 const PORT = process.env.PORT || 5001;
