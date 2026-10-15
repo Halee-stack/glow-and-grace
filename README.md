@@ -90,3 +90,10 @@ glow-and-grace/
 │
 └── README.md
 
+## Screenshots
+
+### Home Page
+![Glow & Grace Home Page](screenshots/homepage.png)
+
+### Products Page
+![Glow & Grace Products Page](screenshots/products.png)
