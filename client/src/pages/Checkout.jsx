@@ -27,7 +27,7 @@ function Checkout({ cart, user, setCart }) {
             return;
         }
 
-        const response = await fetch("http://localhost:5001/api/orders", {
+        const response = await fetch("https://glow-and-grace-c15y.onrender.com/api/orders", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
